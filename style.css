@@ -105,6 +105,10 @@ section{
 		changeText 8s linear infinite 
 }
 
+span{
+    color: var(--main-color);
+}
+
 @keyframes effectText{
 	from{
 		max-width: 0;
