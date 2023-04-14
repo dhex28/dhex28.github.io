@@ -14,8 +14,8 @@
 :root{
     --bg-color: #1f242d;
     --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #0ef;
+    --text-color: #FFF4E0;
+    --main-color: #B46060;
 }
 
 html{
@@ -25,7 +25,7 @@ html{
 
 body{
     background: var(--bg-color);
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 section{
@@ -250,9 +250,47 @@ span{
 
 .skills-box p{
     font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+    
 }
 
+/* skill */
+.column{
+    flex: 1; /* Make columns take up equal width */
+  padding: 20px; /* Add padding for spacing */
+
+}
+.skill-bar {
+    width: 100%;
+    height: 25px;
+    background-color: var(--text-color);
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    width: 0;
+    background-color: var(--main-color);
+    border-radius: 60px;
+    transition: width 2s ease-in-out;
+    color: var(--text-color);
+}
+
+  /* Optional: Add styles for text label or percentage */
+.skill-bar-label {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.p2-skills p{
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 0px 5px 0px;
+}
+
+/*  */
 .portfolio{
     background: var(--second-bg-color);
 }
